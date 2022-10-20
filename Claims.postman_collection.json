@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "ed8e2319-4908-43ed-9b9e-15c9196258b7",
+		"name": "Claims",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1650467"
+	},
+	"item": [
+		{
+			"name": "submitClaim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policyHolderId\": 2,\r\n    \"dateOfService\": \"10-12-2022\",\r\n    \"categoryId\":4,\r\n    \"billedAmt\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/claims/submit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"claims",
+						"submit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Batch_Process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"inputfilepath\": \"C:\\\\Users\\\\Giru\\\\claim.CSV\",\r\n    \"outputFilePath\": \"C:\\\\Users\\\\Giru\\\\claimProcessed.CSV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/batch/processClaims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"batch",
+						"processClaims"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Claim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/claims/process?claimId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"claims",
+						"process"
+					],
+					"query": [
+						{
+							"key": "claimId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

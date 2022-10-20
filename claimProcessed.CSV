@@ -1,0 +1,5 @@
+policyId,policyHolderId,dateOfService,category,subCategory,billedAmt,policyHolderPays,planPays,ruleUsed,indAccumulatedDed,famAccumulatedDed,errorCode,errorMessage,processMessage
+POLICY1,4,2022-10-11 17:00:00.0,Outpatient Services,X-RAYS,200.00,120.0000,80.0000,40.00% AFTER DEDUCTIBLE,240.0000,360.0000,,,ANNUAL DECUCTIBLE  (INDIVIDUAL or FAMILY) not met- plan pays 40.00%
+POLICY1,2,2022-10-11 17:00:00.0,Outpatient Services,X-RAYS,200.00,120.0000,80.0000,40.00% AFTER DEDUCTIBLE,240.0000,480.0000,,,ANNUAL DECUCTIBLE  (INDIVIDUAL or FAMILY) not met- plan pays 40.00%
+,,,,,,,,,,,E001,Invalid Claim Id3,
+POLICY1,4,2022-10-11 17:00:00.0,Outpatient Services,X-RAYS,200.00,120.0000,80.0000,40.00% AFTER DEDUCTIBLE,360.0000,600.0000,,,ANNUAL DECUCTIBLE  (INDIVIDUAL or FAMILY) not met- plan pays 40.00%
